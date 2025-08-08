@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Email Generator - AI-Powered Outreach</title>
+    <meta name="description" content="Generate compelling cold emails for sales, hiring, fundraising, and partnerships. Powered by GPT-4o.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🚀 Cold Email Generator</h1>
+            <p class="subtitle">Generate compelling cold emails for freelancers & startups</p>
+            <div class="social-proof">
+                <p>✨ Join 1,000+ freelancers using this tool</p>
+                <p>⚡ Generate professional emails in 30 seconds</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <form id="emailForm" class="email-form">
+                <div class="form-group">
+                    <label for="company_name">Your Company Name *</label>
+                    <input 
+                        type="text" 
+                        id="company_name" 
+                        name="company_name" 
+                        placeholder="e.g., TechFlow Solutions" 
+                        required 
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="target_industry">Target Industry *</label>
+                    <input 
+                        type="text" 
+                        id="target_industry" 
+                        name="target_industry" 
+                        placeholder="e.g., SaaS, Healthcare, E-commerce" 
+                        required 
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="goal">Email Goal *</label>
+                    <select id="goal" name="goal" required>
+                        <option value="">Select your goal</option>
+                        <option value="Sales">Sales & Business Development</option>
+                        <option value="Hiring">Hiring & Recruitment</option>
+                        <option value="Fundraising">Fundraising & Investment</option>
+                        <option value="Partnership">Partnership & Collaboration</option>
+                        <option value="Networking">Networking & Relationship Building</option>
+                        <option value="Consulting">Consulting & Services</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="product_description">What You're Offering *</label>
+                    <textarea 
+                        id="product_description" 
+                        name="product_description" 
+                        placeholder="Describe your product, service, or opportunity in detail..."
+                        rows="3"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="tone">Email Tone *</label>
+                    <select id="tone" name="tone" required>
+                        <option value="">Select tone</option>
+                        <option value="Professional">Professional & Formal</option>
+                        <option value="Casual">Casual & Friendly</option>
+                        <option value="Bold">Bold & Assertive</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="generate-btn" id="generateBtn">
+                    <span class="btn-text">Generate Cold Email</span>
+                    <span class="btn-loading" style="display: none;">Generating...</span>
+                </button>
+            </form>
+
+            <div id="result" class="result-container" style="display: none;">
+                <h3>Your Generated Cold Email</h3>
+                <div class="email-content" id="emailContent"></div>
+                
+                <div class="action-buttons">
+                    <button class="copy-btn" id="copyBtn">📋 Copy Email</button>
+                    <button class="regenerate-btn" id="regenerateBtn">🔄 Generate Another</button>
+                </div>
+
+                <div class="pro-upsell">
+                    <h4>Want more variations?</h4>
+                    <p>Get 5 additional email variations + LinkedIn DM version for just $5</p>
+                    <a href="https://gumroad.com/l/cold-email-pro" target="_blank" class="pro-btn">
+                        🚀 Unlock Pro Version - $5
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Powered by GPT-4o • Built for freelancers & startups</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
