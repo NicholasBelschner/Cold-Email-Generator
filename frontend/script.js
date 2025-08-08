@@ -1,5 +1,5 @@
 // API configuration
-const API_BASE_URL = 'http://localhost:8000'; // Change this to your deployed backend URL
+const API_BASE_URL = 'https://cold-email-generator-s6gh.onrender.com'; // Live backend URL
 
 // DOM elements
 const emailForm = document.getElementById('emailForm');
@@ -193,6 +193,6 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
     // Local development
     API_BASE_URL = 'http://localhost:8000';
 } else {
-    // Production - update this to your deployed backend URL
-    API_BASE_URL = 'https://your-backend-url.onrender.com';
+    // Production - live backend URL
+    API_BASE_URL = 'https://cold-email-generator-s6gh.onrender.com';
 } 
